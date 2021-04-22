@@ -6,13 +6,13 @@ export interface IHeaderProps {
 }
 
 export function Header (props: IHeaderProps) {
-    const currentDate = format(new Date(), 'EEEEE, d, MMMM');
+    const currentDate = format(new Date(), 'EEEEEE, d, MMMM', {locale: ptBR});
 
   return (
     <header className={styles.headerContainer}>
       <img src="/logo.svg"></img>
       <p>O melhor para você ouvir, sempre</p>
-      <span>Quinta, 22 de abril</span>
+      <span>{currentDate}</span>
     </header>
   );
 }
