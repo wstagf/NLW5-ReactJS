@@ -4,14 +4,20 @@ import { format, parseISO } from "date-fns";
 import { ptBR } from "date-fns/locale";
 import { converteDurationToTimeString } from "../utils/converteDurationToTimeString";
 
-type Epsode = {
+type Episode = {
   id: string;
   title: string;
+  thumbnail: string;
   members: string;
+  publishedAt: string;
+  duration: string;
+  durationAsString: string;
+  description: string;
+  url: string;
 };
 
 type HomeProps = {
-  episodes: Epsode[];
+  episodes: Episode[];
 };
 
 export default function Home(props: HomeProps) {
