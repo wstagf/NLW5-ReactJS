@@ -6,4 +6,6 @@ export function converteDurationToTimeString(duration: number) {
     const finalResult = [hours, minutes, secounds]
         .map(unit => String(unit).padStart(2, '0'))
         .join(":")
+
+    return finalResult;
 }
