@@ -32,7 +32,17 @@ export default function Home({ allEpisodes, lastesEpisodes }: HomeProps) {
           {lastesEpisodes.map((episode) => {
             return (
               <li key={episode.id}>
-                <a href="">{episode.title}</a>
+                <img src={episode.thumbnail} alt={episode.title} />
+                <div className={styles.episodeDetails}>
+                  <a href="">{episode.title}</a>
+                  <p>{episode.members}</p>
+                  <span>{episode.publishedAt}</span>
+                  <span>{episode.durationAsString}</span>
+
+                  <button type="button">
+                    <img src="/play-green.svg" alt="Tocar Episódio" />
+                  </button>
+                </div>
               </li>
             );
           })}
