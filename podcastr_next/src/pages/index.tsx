@@ -31,7 +31,7 @@ export default function Home({ allEpisodes, lastesEpisodes }: HomeProps) {
         <ul>
           {lastesEpisodes.map((episode) => {
             return (
-              <li>
+              <li key={episode.id}>
                 <a href="">{episode.title}</a>
               </li>
             );
