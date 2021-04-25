@@ -19,10 +19,11 @@ type Episode = {
 };
 
 type HomeProps = {
-  episodes: Episode[];
+  allEpisodes: Episode[];
+  lastesEpisodes: Episode[];
 };
 
-export default function Home(props: HomeProps) {
+export default function Home({ allEpisodes, lastesEpisodes }: HomeProps) {
   return (
     <div className={styles.homepage}>
       <section className={styles.lastetEpisodes}></section>
