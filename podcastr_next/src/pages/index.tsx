@@ -6,6 +6,8 @@ import { converteDurationToTimeString } from "../utils/converteDurationToTimeStr
 
 import styles from "./home.module.scss";
 
+import Image from "next/image";
+
 type Episode = {
   id: string;
   title: string;
@@ -32,7 +34,13 @@ export default function Home({ allEpisodes, lastesEpisodes }: HomeProps) {
           {lastesEpisodes.map((episode) => {
             return (
               <li key={episode.id}>
-                <img src={episode.thumbnail} alt={episode.title} />
+                <Image
+                  src={episode.thumbnail}
+                  alt={episode.title}
+                  width={192}
+                  height={192}
+                  objectFit="cover"
+                />
                 <div className={styles.episodeDetails}>
                   <a href="">{episode.title}</a>
                   <p>{episode.members}</p>
