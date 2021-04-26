@@ -9,7 +9,7 @@
   }
 }
 
-.lastetEpisodes {
+.latestEpisodes {
   ul {
     list-style: none;
     display: grid;
@@ -20,7 +20,7 @@
       background: var(--white);
       border: 1px solid var(--gray-100);
       padding: 1.25rem;
-      border-radius: 1rem;
+      border-radius: 1.5rem;
       position: relative;
 
       display: flex;
@@ -33,7 +33,7 @@
       }
 
       .episodeDetails {
-        flex: 1;
+        float: 1;
         margin-left: 1rem;
 
         a {
