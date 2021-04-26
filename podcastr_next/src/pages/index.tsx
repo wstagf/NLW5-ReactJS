@@ -47,11 +47,11 @@ export default function Home({ allEpisodes, lastesEpisodes }: HomeProps) {
                   <p>{episode.members}</p>
                   <span>{episode.publishedAt}</span>
                   <span>{episode.durationAsString}</span>
-
-                  <button type="button">
-                    <img src="/play-green.svg" alt="Tocar Episódio" />
-                  </button>
                 </div>
+
+                <button type="button">
+                  <img src="/play-green.svg" alt="Tocar episódio" />
+                </button>
               </li>
             );
           })}
