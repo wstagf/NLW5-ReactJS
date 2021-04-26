@@ -48,6 +48,15 @@
             text-decoration: underline;
           }
         }
+
+        p {
+          font-size: 0.875rem;
+          margin-top: 0.5rem;
+          max-width: 70%;
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
       }
     }
   }
